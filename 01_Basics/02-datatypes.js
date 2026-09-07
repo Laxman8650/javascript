@@ -14,7 +14,7 @@ let age = 20;
 // Boolean
 let adult = true;
 // String
-let userName = "rahul";
+let userName = "Ronni";
 // Undifiend
 let address;
 // null
@@ -24,9 +24,9 @@ const big1 = 9007199254740991n;
 // Missing
 
 // TODO: Implement unique Symbol keys for object properties to avoid conflicts
-const user = {
-  name: "Rahul",
-};
+// const user = {
+//   name: "Rahul",
+// };
 console.log(age);
 console.log(adult);
 console.log(userName);
@@ -44,3 +44,10 @@ console.log(typeof age);
 2nd- Arrays
 3rd- function
 */
+// Object
+const items = {
+  Mohit: true,
+  Rahul: false,
+  Rohan: undefined,
+};
+console.log(items["Rahul"]);
