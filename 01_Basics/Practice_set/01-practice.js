@@ -38,3 +38,13 @@ let wordDictionary = {
 };
 wordDictionary.Ephemeral = " Lasting for a very short time.";
 console.log(wordDictionary);
+
+// ? let e=1+2+"5", let j="5"+2+1 solve it and explain
+
+let e = 1 + 2 + "5";
+let b = "4" + 2 + 1;
+console.log(e, b); // *The output of this equaton was 35 and 421.
+// ! Explanation
+// * e= 35 -> 2 + 1 = 3. Since "5" is a string, JavaScript converts the number 3 into a string, and the + operator performs concatenation in this situation."
+
+// * b= 421 -> "In the expression "4" + 2 + 1, "4" is a string while 2 and 1 are numbers. Because "4" is a string, JavaScript converts the 2 into a string, resulting in "42". Then, the 1 is also converted into a string, making the final output "421"."
