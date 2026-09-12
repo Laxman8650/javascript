@@ -16,7 +16,7 @@ console.table([accountId, accountEmail, accountPassword, accountCity]);
 
 // Practice
 // -------------Var--------------
-// Var can be update and re-declare
+// *Var can be update and re-declare
 var a = 10;
 var a = 20;
 // It's not good programming
@@ -31,7 +31,7 @@ var userName = "Mohit";
 console.log(userName);
 
 //------------ let---------------
-// let can be update but not re-declaring.
+// *let can be update but not re-declaring.
 let c = 10;
 // It's wrong
 let a = "pujja";
@@ -39,7 +39,7 @@ let a = "pujja";
 c = "pujja";
 console.log(c);
 
-// `let` is used to declare a block-scoped variable.
+// *`let` is used to declare a block-scoped variable.
 let myName = "mohit";
 {
   let myName = "rahul";
