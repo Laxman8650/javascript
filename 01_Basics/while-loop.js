@@ -11,12 +11,12 @@ while (i < n) {
 // * do...while loop
 // do...while loop mein code block kam se kam ek baar execute hota hai, uske baad condition check hoti hai.
 
-let i = 10;
-let n = prompt("Enter the number");
-n = Number.parseInt(n);
+let x = 10;
+let y = prompt("Enter the number");
+y = Number.parseInt(y);
 do {
   console.log(i);
   i++; // update loop ke andr
-} while (i < n);
+} while (i < y);
 {
 }
