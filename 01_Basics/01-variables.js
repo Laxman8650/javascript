@@ -1,4 +1,11 @@
 // Variables in JavaScript
+// * Rules
+/* Letter / _ / $ → allowed at start
+Number → start mein allowed nahi
+Space → allowed nahi
+Keyword → allowed nahi
+Case-sensitive → age ≠ Age
+*/
 
 const accountId = 1234;
 let accountEmail = "mohit12@gmail.com";
