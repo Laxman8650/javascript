@@ -1,38 +1,38 @@
-// console.log("Strings in javScript");
+console.log("Strings in javScript");
 
-// // String - text/characters ka collection.
-// // String - mainly 3 type se create hote hai "Hello" 'Hello' `Hello`
+// String - text/characters ka collection.
+// String - mainly 3 type se create hote hai "Hello" 'Hello' `Hello`
 
-// let userName = "Mohit";
-// console.log(userName);
-// console.log(userName.length); // length of string
-// console.log(userName[0]); // printing value using index of string
-// console.log(userName[1]); // printing value using index of string
-// console.log(userName[2]); // printing value using index of string
-// console.log(userName[3]); // printing value using index of string
-// console.log(userName[4]); // printing value using index of string
+let userName = "Mohit";
+console.log(userName);
+console.log(userName.length); // length of string
+console.log(userName[0]); // printing value using index of string
+console.log(userName[1]); // printing value using index of string
+console.log(userName[2]); // printing value using index of string
+console.log(userName[3]); // printing value using index of string
+console.log(userName[4]); // printing value using index of string
 
-// // String concatenation
+// String concatenation
 
-// let firstName = "Rohan";
-// let lastName = "singh";
+let firstName = "Rohan";
+let lastName = "singh";
 
-// console.log("Yours full name is " + firstName + " " + lastName);
+console.log("Yours full name is " + firstName + " " + lastName);
 
-// // String interpolation - String ke andar directly kisi variable ya expression ki value insert karna.
-// // * JavaScript mein string interpolation ke liye template literals use hote hain, jisme backticks ` lagte hain.
-// // * ${}
+// String interpolation - String ke andar directly kisi variable ya expression ki value insert karna.
+// * JavaScript mein string interpolation ke liye template literals use hote hain, jisme backticks ` lagte hain.
+// * ${}
 
-// let boy1 = "Nikhil";
-// let boy2 = "Rahul";
+let boy1 = "Nikhil";
+let boy2 = "Rahul";
 
-// console.log(`${boy1} and ${boy2} is best friend`);
+console.log(`${boy1} and ${boy2} is best friend`);
 
-// // *2 Exm.
-// let myName = "Mohit";
-// let age = 20;
+// *2 Exm.
+let myName = "Mohit";
+let age = 20;
 
-// console.log(`My name is ${myName} and I am ${age} years old.`);
+console.log(`My name is ${myName} and I am ${age} years old.`);
 
 // ? Strings Methods
 // Method = kisi value/object ka built-in function jo us value par specific kaam karta hai.
@@ -75,3 +75,19 @@ console.log(f2.includes("mohit"));
 // \r	Carriage return
 console.log("Hello\nMohit");
 console.log('Hello "Mohit"');
+
+// ? QuickQuiz : Use a for loop to print a string
+
+let mname = "Jyoti";
+for (let i = 0; i < mname.length; i++) {
+  console.log(mname[i]);
+}
+
+// ! ak sath print karne ke liye
+
+let uname = "Jyoti";
+let result = "";
+for (let i = 0; i < uname.length; i++) {
+  result = result + uname[i];
+}
+console.log(result);
