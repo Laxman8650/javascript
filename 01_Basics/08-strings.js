@@ -31,8 +31,7 @@ console.log(`${boy1} and ${boy2} is best friend`);
 // *2 Exm.
 let myName = "Mohit";
 let age = 20;
-
-console.log(`My name is ${myName} and I am ${age} years old.`);
+console.log(`My name is "${myName}" and I am "${age}" years old.`);
 
 // ? Strings Methods
 // Method = kisi value/object ka built-in function jo us value par specific kaam karta hai.
