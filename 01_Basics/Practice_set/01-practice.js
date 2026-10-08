@@ -48,3 +48,10 @@ console.log(e, b); // *The output of this equaton was 35 and 421.
 // * e= 35 -> 2 + 1 = 3. Since "5" is a string, JavaScript converts the number 3 into a string, and the + operator performs concatenation in this situation."
 
 // * b= 421 -> "In the expression "4" + 2 + 1, "4" is a string while 2 and 1 are numbers. Because "4" is a string, JavaScript converts the 2 into a string, resulting in "42". Then, the 1 is also converted into a string, making the final output "421"."
+
+// ? console.log([]==[]);, console.log([]===[]); what is the output and why?
+
+console.log([] == []); //False
+console.log([] === []); //False
+
+//! Output is false because in javascript arrays is a refrence type of obect and there are not comparing by values, even its compare by memory refrence(Address).
