@@ -54,4 +54,4 @@ console.log(e, b); // *The output of this equaton was 35 and 421.
 console.log([] == []); //False
 console.log([] === []); //False
 
-//! Output is false because in javascript arrays is a refrence type of obect and there are not comparing by values, even its compare by memory refrence(Address).
+//! Output is false because in javascript arrays are a refrence types or obects and there are not comparing by values, even its compare by memory refrence(Address).
