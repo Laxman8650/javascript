@@ -1,4 +1,6 @@
-.box {
+/** practice 1 Style */
+
+/* .box {
   height: 100px;
   width: 100px;
   border: 1px solid black;
@@ -6,4 +8,15 @@
   background-color: aquamarine;
   text-align: center;
   padding: auto;
+} */
+
+/* This is practice 2 Style */
+
+.myClass {
+  color: red;
+  /* font-family: cursive; */
+  font-family: "Risque", serif;
+}
+.new-class {
+  background-color: rgb(142, 242, 142);
 }
