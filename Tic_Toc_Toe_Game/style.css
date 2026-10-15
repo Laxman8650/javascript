@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(254, 243, 226);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-family: "Bitcount Prop Single Ink", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.container {
+  height: 70vh;
+  width: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  background-color: #76c457;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 8vmin;
+  color: #0a0a0a;
+}
+#reset-btn {
+  font-size: 2.5vmin;
+  padding: 0.7em;
+  margin-top: 1rem;
+  /* display: inline-block; */
+  background-color: #2a1a0e;
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  backface-visibility: hidden;
+  will-change: transform;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+#reset-btn:hover {
+  transform: scale(1.1);
+}
+
+#msg-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Background thoda dhundla/black karne ke liye */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Taaki yeh game ke upar dikhe */
+}
+
+/*  for hide, During the game  */
+.hide {
+  display: none !important;
+}
+
+#msg-text {
+  font-size: 8vmin;
+  color: white;
+  font-family: sans-serif;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#new-game {
+  position: fixed;
+  top: 56%;
+  left: 47%;
+  padding: 0.8rem;
+  background-color: rgb(
+    255,
+    253,
+    253
+  ); /* Background thoda dhundla/black karne ke liye */
+  display: flex;
+  color: rgb(4, 4, 4);
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 7px;
+  z-index: 9; /* Taaki yeh game ke upar dikhe */
+}
