@@ -4,12 +4,11 @@ let resetbtn = document.querySelector("#reset-btn");
 let msgScreen = document.querySelector("#msg-screen");
 let msgText = document.querySelector("#msg-text");
 let newgame = document.querySelector("#new-game");
-let gameDrw = document.querySelector("#game-draw");
 
-let turnO = true; //if playerX true than playerO is false
+let turnO = true; //If turnO is true, it's Player O's turn; otherwise, it's Player X's turn.
 let count = 0;
-// Use of 2d array for store the winning patterns.
 
+// Use of 2d array for store the winning patterns.
 const winPatterns = [
   [0, 1, 2],
   [3, 4, 5],
@@ -21,8 +20,8 @@ const winPatterns = [
   [2, 4, 6],
 ];
 // console.log(winPatterns);
-// New game code
 
+// New game code
 const newGame = () => {
   turnO = true;
   count = 0;
@@ -55,8 +54,7 @@ boxes.forEach((box) => {
       box.innerText = "X";
       turnO = true;
     }
-    box.disabled = "true"; // Jo box fill hho gya wo dubara edit nhi hoga
-    checkWinner();
+    box.disabled = true; // Jo box fill hho gya wo dubara edit nhi hoga
     count++;
     let isWinner = checkWinner();
     if (count === 9 && !isWinner) {
@@ -72,7 +70,7 @@ const disabledBoxes = () => {
   }
 };
 
-// for enableBox for new game
+// enableBox for new game
 const enableBoxes = () => {
   for (let box of boxes) {
     box.disabled = false;
@@ -80,6 +78,7 @@ const enableBoxes = () => {
   }
 };
 
+// Show winner
 const showWinner = (winner) => {
   msgText.innerText = `Winner is ${winner}`;
   setTimeout(() => {

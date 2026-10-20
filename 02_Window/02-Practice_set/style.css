@@ -12,11 +12,22 @@
 
 /* This is practice 2 Style */
 
-.myClass {
+/* .myClass {
   color: red;
   /* font-family: cursive; */
-  font-family: "Risque", serif;
-}
-.new-class {
+/* font-family: "Risque", serif; */
+/* }  */
+/* .new-class {
   background-color: rgb(142, 242, 142);
+} */
+
+/* For toggle button */
+
+.dark {
+  background-color: black;
+  color: rgb(49, 240, 240);
+}
+.light {
+  background-color: white;
+  color: #0a0a0a;
 }
