@@ -42,51 +42,85 @@
 // sort() — array ko arrange/sort karna. Ye ak alphabatice order main arrange karta hai, sort() → original array ko modify karta hai, compare function bna skate hain numeric ko ascending,Descending order main karne ke liye
 // reverse() — array ko ulta karna. reverse() original array ko modify karta hai.
 
-let num = [1, 5, 34, 2, 6];
-let num2 = [7, 8, 15, 16, 17];
+// let num = [1, 5, 34, 2, 6];
+// let num2 = [7, 8, 15, 16, 17];
 
-let b = num.toString();
-console.log(b, typeof b);
+// let b = num.toString();
+// console.log(b, typeof b);
 
-let c = num.join("_");
-console.log(c, typeof c);
+// let c = num.join("_");
+// console.log(c, typeof c);
 
-let r = num.pop();
-console.log(num, r); // jo element pop hua hai usse return karega
+// let r = num.pop();
+// console.log(num, r); // jo element pop hua hai usse return karega
 
-let x = num.push("Apple");
-console.log(num, x);
+// let x = num.push("Apple");
+// console.log(num, x);
 
-num.shift();
-console.log(num);
+// num.shift();
+// console.log(num);
 
-num.unshift("Mango");
-console.log(num);
+// num.unshift("Mango");
+// console.log(num);
 
-let w = num.concat(num2); // new array return karega
-console.log(w);
+// let w = num.concat(num2); // new array return karega
+// console.log(w);
 
-delete num[0];
-console.log(num, num.length); // not effect arrays length
+// delete num[0];
+// console.log(num, num.length); // not effect arrays length
 
-let compare = (a, b) => {
-  //ascending or deascending order
-  return b - a;
-};
-num.sort(compare); // orignal array ko modify kar deta hai
-console.log(num);
+// let compare = (a, b) => {
+//   //ascending or deascending order
+//   return b - a;
+// };
+// num.sort(compare); // orignal array ko modify kar deta hai
+// console.log(num);
 
-num2.reverse();
-console.log(num2);
+// num2.reverse();
+// console.log(num2);
 
-let deletedValues = num.splice(2, 3, 1001, 1002, 1003); // first argument- strating index , second argument- how much elemnts remove, third argument- How much elements add
-console.log(deletedValues, num); //source arrays ko modify karta hai or deleted items ko return karega
+// let deletedValues = num.splice(2, 3, 1001, 1002, 1003); // first argument- strating index , second argument- how much elemnts remove, third argument- How much elements add
+// console.log(deletedValues, num); //source arrays ko modify karta hai or deleted items ko return karega
 
-let newNum1 = num.slice(3);
-let newNum = num.slice(0, 2);
-console.log(newNum1, newNum);
+// let newNum1 = num.slice(3);
+// let newNum = num.slice(0, 2);
+// console.log(newNum1, newNum);
 
-// * Array.form- iterable ya array-like, value ko ek actual Array mein convert karta hai. taki un par arrays method work kar paye
-let userName = "Mohit";
-let array = Array.from(userName);
-console.log(array, typeof array);
+// // * Array.form- iterable ya array-like, value ko ek actual Array mein convert karta hai. taki un par arrays method work kar paye
+// let userName = "Mohit";
+// let array = Array.from(userName);
+// console.log(array, typeof array);
+
+
+//Q - You have an array of objects representing products. Use the JavaScript map() method to create two separate arrays: one containing only the product names, and another containing only the product prices."
+
+// const products = [
+//   {name: "mouse", price: 500},
+//   {name: "keyboard", price: 1500},
+//   {name: "moniter", price: 15500},
+// ];
+
+// const prices = products.map((products)=> products.price);
+// const names = products.map((products)=> products.name);
+// console.log(prices,names);
+
+
+// const nameAndprices= products.map((products)=>{
+//   return{
+//     name: products.name,
+//     price:products.price
+//   }
+// });
+// console.log(nameAndprices);
+
+const users = [
+  { firstName: "Rahul", lastName: "Sharma", age: 25, city: "Delhi" },
+  { firstName: "Amit", lastName: "Verma", age: 30, city: "Mumbai" }
+]; 
+const result = users.map((users)=>{
+return{
+fullnames: users.firstName+" "+users.lastName,
+ages: users.age,
+}
+});
+console.log(result);
