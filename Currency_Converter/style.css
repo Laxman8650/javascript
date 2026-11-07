@@ -1,0 +1,87 @@
+:root{
+    --primary-color:#18230f;
+    --bg-color:#27391C;
+    --font: "Roboto Mono", monospace;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: var(--primary-color);
+    font-family: var(--font);
+     color: #fff;
+}
+.container{
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 45vh;
+    width:45vh;
+    box-shadow: rgba(251, 250, 250, 0.18) 0px 2px 4px;
+}
+.container h2{
+    text-align: center;
+}
+form{
+    margin:2rem 0 0.5rem 0;
+    font-weight: 600;
+}
+form select, input, button{
+    border:none;
+    outline:none;
+    width:100%;
+    border-radius: 10px;
+     background-color: #f4f6f4;
+     color:#1e291b;
+   
+}
+form input{
+    height:2rem;
+    border:1px solid gray;
+    padding-left: 0.5rem;
+    
+}
+.from, .to p{
+    font-size: 0.9rem;
+}
+.dropdown{
+    display: flex;
+    text-align: center;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+.dropdown i{
+    margin-top: 1.8rem;
+}
+.select-container img{
+ width:35%;
+}
+.select-container{
+    display: flex;
+    /* border:1px solid gray; */
+    /* border-radius: 5px; */
+    justify-content: center;
+    align-items: center;
+}
+.select-container select{
+    width:50%;
+}
+#msg{
+    margin-top: 1.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+button{
+    height:2rem;
+    margin-top:1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ffd700;
+    color: #1e291b;
+}
