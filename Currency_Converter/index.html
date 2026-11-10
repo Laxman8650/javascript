@@ -24,7 +24,7 @@
       <h2>Currency Converter</h2>
       <form action="">
         <div>
-          <input value="100" type="text" />
+          <input value="1" type="text" />
           <p>Enter Amount</p>
         </div>
         <div class="dropdown">
@@ -32,11 +32,7 @@
             <p>From</p>
             <div class="select-container">
               <img src="https://flagsapi.com/US/flat/64.png" alt="flagsapi" />
-              <select name="from" id="country">
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="NP">NP</option>
-              </select>
+              <select name="from"></select>
             </div>
           </div>
           <i class="fa-solid fa-arrows-rotate"></i>
@@ -44,17 +40,15 @@
             <p>To</p>
             <div class="select-container">
               <img src="https://flagsapi.com/IN/flat/64.png" alt="flagsapi" />
-              <select name="to" id="country">
-                <option value="USD">USD</option>
-                <option value="EUR">EUR</option>
-                <option value="NP">NP</option>
-              </select>
+              <select name="to"></select>
             </div>
           </div>
         </div>
-        <p id="msg">1 USD = 80INR</p>
+        <p id="msg"></p>
         <button>CONVERT</button>
       </form>
     </div>
+    <script src="flag.js"></script>
+    <script src="c_c.js"></script>
   </body>
 </html>
